@@ -17,8 +17,20 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-body * {
-    margin: 0px;
+/* common */
+
+body .site-intro,
+body .site-info,
+body .site-quote,
+body .sign-up-page {
+    margin: 0px 0px;
+    padding: var(--site-padding);
+}
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 12px;
 }
 
 /* header and footer */
@@ -27,7 +39,6 @@ footer {
     display: flex;
     background-color: var(--background-color-dark);
     align-items: center;
-    padding: var(--site-padding);
 }
 
 header {
@@ -57,36 +68,23 @@ footer {
     color: var(--text-color-secondary);
 }
 
-/* common */
-
-button {
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 12px;
-}
-
 /* .site intro */
 .site-intro {
     background-color: var(--background-color-dark);
     display: flex;
-    padding: var(--site-padding);
     justify-content: space-between;
-    gap: 30px;
 }
 
 .site-intro-content {
     display: flex;
     flex-direction: column;
     flex: 1 1 50%;
-    gap: 30px;
+    margin: 0px 0px;
 }
 
-.site-intro-image {
-    background-color: gray;
-    text-align: center;
-    color: var(--text-color-secondary);
-    align-content: center;
-    flex: 1 1 50%;
+.site-intro h2,
+.site-intro p {
+    margin: 5px 0px;
 }
 
 .site-intro h2 {
@@ -104,4 +102,12 @@ button {
     background-color: var(--background-color-light);
     color: var(--text-color-secondary);
 
+}
+
+.site-intro-image {
+    background-color: gray;
+    text-align: center;
+    color: var(--text-color-secondary);
+    align-content: center;
+    flex: 1 1 50%;
 }
