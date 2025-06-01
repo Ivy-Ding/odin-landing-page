@@ -56,3 +56,52 @@ footer {
     padding: 20px;
     color: var(--text-color-secondary);
 }
+
+/* common */
+
+button {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+/* .site intro */
+.site-intro {
+    background-color: var(--background-color-dark);
+    display: flex;
+    padding: var(--site-padding);
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.site-intro-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    gap: 30px;
+}
+
+.site-intro-image {
+    background-color: gray;
+    text-align: center;
+    color: var(--text-color-secondary);
+    align-content: center;
+    flex: 1 1 50%;
+}
+
+.site-intro h2 {
+    font-size: var(--font-size-large);
+    color: var(--text-color-main);
+    font-weight: var(--font-weight-large);
+}
+
+.site-intro p {
+    font-size: var(--font-size-tiny);
+    color: var(--text-color-secondary);
+}
+
+.site-intro button {
+    background-color: var(--background-color-light);
+    color: var(--text-color-secondary);
+
+}
