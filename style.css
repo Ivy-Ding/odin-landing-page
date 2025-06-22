@@ -147,3 +147,23 @@ figure img {
 figure figcaption {
     flex: 1 1 25%;
 }
+
+/* quote section */
+
+.site-quote {
+    background-color: var(--text-color-secondary);
+    font-size: 36px;
+    color: var(--background-color-dark);
+}
+
+.site-quote blockquote {
+    font-style: italic;
+    font-weight: light;
+}
+
+.site-quote cite {
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    display: block
+}
