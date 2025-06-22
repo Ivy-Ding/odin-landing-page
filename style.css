@@ -21,8 +21,9 @@ body {
 button {
     background-color: var(--background-color-light);
     color: var(--text-color-secondary);
-    border-color: transparent;
+    border-color: var(--background-color-light);
     padding: 5px 30px;
+    border-style: solid;
 }
 
 /* common */
@@ -166,4 +167,31 @@ figure figcaption {
     font-style: normal;
     text-align: right;
     display: block
+}
+
+/* call to action */
+
+.sign-up-page {
+    background-color: var(--background-color-light);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up-page h2 {
+    color: var(--text-color-main);
+}
+
+.sign-up-page p {
+    color: var(--text-color-secondary);
+}
+
+.sign-up-page .right {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up-page button {
+    border-width: 5px;
+    border-color: var(--text-color-main);
 }
